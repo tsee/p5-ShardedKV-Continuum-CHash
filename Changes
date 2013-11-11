@@ -1,0 +1,4 @@
+Revision history for ShardedKV-Continuum-CHash: {{ $dist->version }}
+
+{{$NEXT}}
+
