@@ -52,7 +52,7 @@ sub extend {
     %$orig_spec, # replicas + in case there's other gunk in it, at least make an effort
     ids => [ @{$orig_spec->{ids}} ], # deep clone
   };
-  push @{ $clone_spec->{ids} }, $spec->{ids};
+  push @{ $clone_spec->{ids} }, @{ $spec->{ids} };
 
   $self->{_chash} = $self->_make_chash($clone_spec);
   $self->{_orig_continuum_spec} = $clone_spec;
