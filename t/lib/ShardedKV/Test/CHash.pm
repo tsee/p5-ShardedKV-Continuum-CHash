@@ -275,8 +275,8 @@ sub make_skv {
     storages => {},
     continuum => $continuum,
   );
-  foreach (@$cont_spec) {
-    $skv->storages->{$_->[0]} = $storage_maker->();
+  foreach (@{ $cont_spec->{ids} }) {
+    $skv->storages->{$_} = $storage_maker->();
   }
   return $skv;
 }
