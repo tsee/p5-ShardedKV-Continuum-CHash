@@ -2,3 +2,7 @@ Revision history for ShardedKV-Continuum-CHash: {{ $dist->version }}
 
 {{$NEXT}}
 
+0.01      2013-11-19 15:39:57 Europe/Amsterdam
+
+- Initial release
+
